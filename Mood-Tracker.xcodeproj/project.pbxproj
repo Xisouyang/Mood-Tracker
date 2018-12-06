@@ -13,10 +13,11 @@
 		5D2407512194EA8200468BB0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5D2407502194EA8200468BB0 /* Assets.xcassets */; };
 		5D2407542194EA8200468BB0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D2407522194EA8200468BB0 /* LaunchScreen.storyboard */; };
 		5D8E000E21B9110900404E38 /* MoodDetailedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D8E000D21B9110900404E38 /* MoodDetailedViewController.swift */; };
+		5D8E001021B919B700404E38 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D8E000F21B919B700404E38 /* Default-568h@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		5D2407462194EA7F00468BB0 /* Hello-TableView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Hello-TableView.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D2407462194EA7F00468BB0 /* Mood-Tracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mood-Tracker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D2407492194EA7F00468BB0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5D24074B2194EA7F00468BB0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		5D24074E2194EA7F00468BB0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -24,6 +25,7 @@
 		5D2407532194EA8200468BB0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5D2407552194EA8200468BB0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5D8E000D21B9110900404E38 /* MoodDetailedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodDetailedViewController.swift; sourceTree = "<group>"; };
+		5D8E000F21B919B700404E38 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,7 +42,8 @@
 		5D24073D2194EA7F00468BB0 = {
 			isa = PBXGroup;
 			children = (
-				5D2407482194EA7F00468BB0 /* Hello-TableView */,
+				5D8E000F21B919B700404E38 /* Default-568h@2x.png */,
+				5D2407482194EA7F00468BB0 /* Mood-Tracker */,
 				5D2407472194EA7F00468BB0 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -48,12 +51,12 @@
 		5D2407472194EA7F00468BB0 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				5D2407462194EA7F00468BB0 /* Hello-TableView.app */,
+				5D2407462194EA7F00468BB0 /* Mood-Tracker.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		5D2407482194EA7F00468BB0 /* Hello-TableView */ = {
+		5D2407482194EA7F00468BB0 /* Mood-Tracker */ = {
 			isa = PBXGroup;
 			children = (
 				5D2407492194EA7F00468BB0 /* AppDelegate.swift */,
@@ -64,15 +67,15 @@
 				5D2407522194EA8200468BB0 /* LaunchScreen.storyboard */,
 				5D2407552194EA8200468BB0 /* Info.plist */,
 			);
-			path = "Hello-TableView";
+			path = "Mood-Tracker";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		5D2407452194EA7F00468BB0 /* Hello-TableView */ = {
+		5D2407452194EA7F00468BB0 /* Mood-Tracker */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5D2407582194EA8200468BB0 /* Build configuration list for PBXNativeTarget "Hello-TableView" */;
+			buildConfigurationList = 5D2407582194EA8200468BB0 /* Build configuration list for PBXNativeTarget "Mood-Tracker" */;
 			buildPhases = (
 				5D2407422194EA7F00468BB0 /* Sources */,
 				5D2407432194EA7F00468BB0 /* Frameworks */,
@@ -82,9 +85,9 @@
 			);
 			dependencies = (
 			);
-			name = "Hello-TableView";
+			name = "Mood-Tracker";
 			productName = "Hello-TableView";
-			productReference = 5D2407462194EA7F00468BB0 /* Hello-TableView.app */;
+			productReference = 5D2407462194EA7F00468BB0 /* Mood-Tracker.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -102,7 +105,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 5D2407412194EA7F00468BB0 /* Build configuration list for PBXProject "Hello-TableView" */;
+			buildConfigurationList = 5D2407412194EA7F00468BB0 /* Build configuration list for PBXProject "Mood-Tracker" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -115,7 +118,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				5D2407452194EA7F00468BB0 /* Hello-TableView */,
+				5D2407452194EA7F00468BB0 /* Mood-Tracker */,
 			);
 		};
 /* End PBXProject section */
@@ -126,6 +129,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5D2407542194EA8200468BB0 /* LaunchScreen.storyboard in Resources */,
+				5D8E001021B919B700404E38 /* Default-568h@2x.png in Resources */,
 				5D2407512194EA8200468BB0 /* Assets.xcassets in Resources */,
 				5D24074F2194EA7F00468BB0 /* Main.storyboard in Resources */,
 			);
@@ -288,7 +292,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = R7Y8QKEC95;
-				INFOPLIST_FILE = "Hello-TableView/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Mood-Tracker/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -306,7 +310,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = R7Y8QKEC95;
-				INFOPLIST_FILE = "Hello-TableView/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Mood-Tracker/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -321,7 +325,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		5D2407412194EA7F00468BB0 /* Build configuration list for PBXProject "Hello-TableView" */ = {
+		5D2407412194EA7F00468BB0 /* Build configuration list for PBXProject "Mood-Tracker" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5D2407562194EA8200468BB0 /* Debug */,
@@ -330,7 +334,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5D2407582194EA8200468BB0 /* Build configuration list for PBXNativeTarget "Hello-TableView" */ = {
+		5D2407582194EA8200468BB0 /* Build configuration list for PBXNativeTarget "Mood-Tracker" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5D2407592194EA8200468BB0 /* Debug */,
