@@ -13,7 +13,6 @@
 		5D2407512194EA8200468BB0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5D2407502194EA8200468BB0 /* Assets.xcassets */; };
 		5D2407542194EA8200468BB0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D2407522194EA8200468BB0 /* LaunchScreen.storyboard */; };
 		5D8E000E21B9110900404E38 /* MoodDetailedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D8E000D21B9110900404E38 /* MoodDetailedViewController.swift */; };
-		5D8E001021B919B700404E38 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D8E000F21B919B700404E38 /* Default-568h@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,7 +24,6 @@
 		5D2407532194EA8200468BB0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5D2407552194EA8200468BB0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5D8E000D21B9110900404E38 /* MoodDetailedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodDetailedViewController.swift; sourceTree = "<group>"; };
-		5D8E000F21B919B700404E38 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,7 +40,6 @@
 		5D24073D2194EA7F00468BB0 = {
 			isa = PBXGroup;
 			children = (
-				5D8E000F21B919B700404E38 /* Default-568h@2x.png */,
 				5D2407482194EA7F00468BB0 /* Mood-Tracker */,
 				5D2407472194EA7F00468BB0 /* Products */,
 			);
@@ -129,7 +126,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				5D2407542194EA8200468BB0 /* LaunchScreen.storyboard in Resources */,
-				5D8E001021B919B700404E38 /* Default-568h@2x.png in Resources */,
 				5D2407512194EA8200468BB0 /* Assets.xcassets in Resources */,
 				5D24074F2194EA7F00468BB0 /* Main.storyboard in Resources */,
 			);

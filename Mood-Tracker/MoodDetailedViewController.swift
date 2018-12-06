@@ -12,14 +12,15 @@ class MoodDetailedViewController: UIViewController {
 
     var date: Date!
     var mood: MoodEntry.Mood!
+    var isEditingEntry = false
     
     @IBAction func pressSave(_ sender: UIBarButtonItem) {
-        
+        performSegue(withIdentifier: "unwind from save", sender: nil)
     }
     
-    @IBAction func pressCancel(_ sender: UIBarButtonItem) {
-        
-    }
+//    @IBAction func pressCancel(_ sender: UIBarButtonItem) {
+//        
+//    }
     
     @IBOutlet weak var buttonAmazingMood: UIButton!
     @IBOutlet weak var buttonGoodMood: UIButton!
