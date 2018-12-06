@@ -121,24 +121,36 @@
                                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <state key="normal" title="Button"/>
+                                                <connections>
+                                                    <action selector="pressMood:" destination="cGQ-sy-mZa" eventType="touchUpInside" id="jX9-58-FR8"/>
+                                                </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BS1-x7-e6V">
+                                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BS1-x7-e6V">
                                                 <rect key="frame" x="0.0" y="64.5" width="343" height="56.5"/>
                                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <state key="normal" title="Button"/>
+                                                <connections>
+                                                    <action selector="pressMood:" destination="cGQ-sy-mZa" eventType="touchUpInside" id="GWi-cD-IMr"/>
+                                                </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EwH-ra-YlL">
+                                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EwH-ra-YlL">
                                                 <rect key="frame" x="0.0" y="129" width="343" height="56"/>
                                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <state key="normal" title="Button"/>
+                                                <connections>
+                                                    <action selector="pressMood:" destination="cGQ-sy-mZa" eventType="touchUpInside" id="B5H-gc-pes"/>
+                                                </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kXP-78-OFg">
+                                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kXP-78-OFg">
                                                 <rect key="frame" x="0.0" y="193" width="343" height="56.5"/>
                                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <state key="normal" title="Button"/>
+                                                <connections>
+                                                    <action selector="pressMood:" destination="cGQ-sy-mZa" eventType="touchUpInside" id="jzk-xv-FX0"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -154,6 +166,9 @@
                                         <date key="date" timeIntervalSinceReferenceDate="565779585.89349794">
                                             <!--2018-12-06 08:59:45 +0000-->
                                         </date>
+                                        <connections>
+                                            <action selector="datePickerDidChangeValue:" destination="cGQ-sy-mZa" eventType="valueChanged" id="Fio-lU-V81"/>
+                                        </connections>
                                     </datePicker>
                                 </subviews>
                                 <constraints>
@@ -172,10 +187,25 @@
                     </view>
                     <navigationItem key="navigationItem" title="Details" id="d1S-yY-rvt">
                         <leftBarButtonItems>
-                            <barButtonItem title="Cancel" id="0GE-AO-2qX"/>
-                            <barButtonItem title="Save" id="iCo-8v-cbS"/>
+                            <barButtonItem title="Cancel" id="0GE-AO-2qX">
+                                <connections>
+                                    <action selector="pressCancel:" destination="cGQ-sy-mZa" id="6CU-tI-4Yq"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem title="Save" id="iCo-8v-cbS">
+                                <connections>
+                                    <action selector="pressSave:" destination="cGQ-sy-mZa" id="DPX-6l-50e"/>
+                                </connections>
+                            </barButtonItem>
                         </leftBarButtonItems>
                     </navigationItem>
+                    <connections>
+                        <outlet property="buttonAmazingMood" destination="LtI-hH-5eP" id="E4d-pP-LdH"/>
+                        <outlet property="buttonBadMood" destination="kXP-78-OFg" id="tji-GA-Qai"/>
+                        <outlet property="buttonGoodMood" destination="BS1-x7-e6V" id="34q-G1-aDJ"/>
+                        <outlet property="buttonNeutralMood" destination="EwH-ra-YlL" id="gvj-BF-kIh"/>
+                        <outlet property="datePicker" destination="3za-sU-Vgw" id="vEy-fF-inv"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ovm-a3-bbb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
