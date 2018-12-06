@@ -12,6 +12,7 @@
 		5D24074F2194EA7F00468BB0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D24074D2194EA7F00468BB0 /* Main.storyboard */; };
 		5D2407512194EA8200468BB0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5D2407502194EA8200468BB0 /* Assets.xcassets */; };
 		5D2407542194EA8200468BB0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D2407522194EA8200468BB0 /* LaunchScreen.storyboard */; };
+		5D8E000E21B9110900404E38 /* MoodDetailedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D8E000D21B9110900404E38 /* MoodDetailedViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		5D2407502194EA8200468BB0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5D2407532194EA8200468BB0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5D2407552194EA8200468BB0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5D8E000D21B9110900404E38 /* MoodDetailedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodDetailedViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 			children = (
 				5D2407492194EA7F00468BB0 /* AppDelegate.swift */,
 				5D24074B2194EA7F00468BB0 /* ViewController.swift */,
+				5D8E000D21B9110900404E38 /* MoodDetailedViewController.swift */,
 				5D24074D2194EA7F00468BB0 /* Main.storyboard */,
 				5D2407502194EA8200468BB0 /* Assets.xcassets */,
 				5D2407522194EA8200468BB0 /* LaunchScreen.storyboard */,
@@ -137,6 +140,7 @@
 			files = (
 				5D24074C2194EA7F00468BB0 /* ViewController.swift in Sources */,
 				5D24074A2194EA7F00468BB0 /* AppDelegate.swift in Sources */,
+				5D8E000E21B9110900404E38 /* MoodDetailedViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
