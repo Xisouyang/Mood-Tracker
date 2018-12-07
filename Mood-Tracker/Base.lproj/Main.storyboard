@@ -82,6 +82,11 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="Q8m-1s-RX4">
+                        <barButtonItem key="leftBarButtonItem" title="Calendar" id="r2B-y5-3Kc">
+                            <connections>
+                                <action selector="pressCalendar:" destination="BYZ-38-t0r" id="FMt-1I-hex"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Add" id="qY9-1y-Stq">
                             <connections>
                                 <segue destination="cGQ-sy-mZa" kind="show" identifier="show new entry" id="RIH-ah-RtT"/>
@@ -120,7 +125,7 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="343" height="56.5"/>
                                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <state key="normal" title="Button"/>
+                                                <state key="normal" title="Amazing"/>
                                                 <connections>
                                                     <action selector="pressMood:" destination="cGQ-sy-mZa" eventType="touchUpInside" id="jX9-58-FR8"/>
                                                 </connections>
@@ -129,7 +134,7 @@
                                                 <rect key="frame" x="0.0" y="64.5" width="343" height="56.5"/>
                                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <state key="normal" title="Button"/>
+                                                <state key="normal" title="Good"/>
                                                 <connections>
                                                     <action selector="pressMood:" destination="cGQ-sy-mZa" eventType="touchUpInside" id="GWi-cD-IMr"/>
                                                 </connections>
@@ -138,7 +143,7 @@
                                                 <rect key="frame" x="0.0" y="129" width="343" height="56"/>
                                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <state key="normal" title="Button"/>
+                                                <state key="normal" title="Neutral"/>
                                                 <connections>
                                                     <action selector="pressMood:" destination="cGQ-sy-mZa" eventType="touchUpInside" id="B5H-gc-pes"/>
                                                 </connections>
@@ -147,7 +152,7 @@
                                                 <rect key="frame" x="0.0" y="193" width="343" height="56.5"/>
                                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <state key="normal" title="Button"/>
+                                                <state key="normal" title="Bad"/>
                                                 <connections>
                                                     <action selector="pressMood:" destination="cGQ-sy-mZa" eventType="touchUpInside" id="jzk-xv-FX0"/>
                                                 </connections>
@@ -213,6 +218,36 @@
             </objects>
             <point key="canvasLocation" x="2274" y="-71"/>
         </scene>
+        <!--Calendar View Controller-->
+        <scene sceneID="h68-dV-KHD">
+            <objects>
+                <viewController storyboardIdentifier="calendar vc" id="SXW-wi-CWb" customClass="CalendarViewController" customModule="Mood_Tracker" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="wqg-ok-C0O">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NDo-Em-Yp1">
+                                <rect key="frame" x="164" y="318" width="46" height="30"/>
+                                <state key="normal" title="Done"/>
+                                <connections>
+                                    <action selector="pressDone:" destination="SXW-wi-CWb" eventType="touchUpInside" id="jXX-B2-x7s"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="qiN-PE-qfh" firstAttribute="trailing" secondItem="NDo-Em-Yp1" secondAttribute="trailing" constant="165" id="3Va-Me-4sT"/>
+                            <constraint firstItem="NDo-Em-Yp1" firstAttribute="top" secondItem="qiN-PE-qfh" secondAttribute="top" constant="298" id="eC5-Xl-e2Z"/>
+                            <constraint firstItem="NDo-Em-Yp1" firstAttribute="leading" secondItem="qiN-PE-qfh" secondAttribute="leading" constant="164" id="itI-9K-9Qw"/>
+                            <constraint firstItem="qiN-PE-qfh" firstAttribute="bottom" secondItem="NDo-Em-Yp1" secondAttribute="bottom" constant="319" id="kEx-xt-abY"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="qiN-PE-qfh"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WuX-01-DR0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3012" y="-71"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="a7n-so-jo8">
             <objects>
@@ -229,7 +264,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="23p-gO-3X2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="620" y="-70.614692653673174"/>
+            <point key="canvasLocation" x="818" y="-71"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>

@@ -27,6 +27,7 @@ class MoodDetailedViewController: UIViewController {
     @IBOutlet weak var buttonNeutralMood: UIButton!
     @IBOutlet weak var buttonBadMood: UIButton!
     @IBAction func pressMood(_ button: UIButton) {
+        
         switch button.tag {
         case 0:
             updateMood(to: .amazing)
